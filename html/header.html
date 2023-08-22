@@ -1,0 +1,98 @@
+<header>
+  <div id="top">
+    <div id="advertisement">
+      <a href="#"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+    <div id="header">
+      <a href="/html/index.html"
+        ><img src="/img/main/logo.png" alt="무신사로고" class="logo"
+      /></a>
+      <nav class="category">
+        <ul class="depth1">
+          <li><a href="javascript:;">NEW</a></li>
+          <li>
+            <a href="woman.html">WOMEN</a>
+            <ul class="depth2">
+              <li><a href="woman.html">아우터</a></li>
+              <li><a href="woman.html">상의</a></li>
+              <li><a href="woman.html">하의</a></li>
+              <li><a href="woman.html">원피스</a></li>
+              <li><a href="woman.html">신발</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="man.html">MEN</a>
+            <ul class="depth2">
+              <li><a href="man.html">아우터</a></li>
+              <li><a href="man.html">상의</a></li>
+              <li><a href="man.html">하의</a></li>
+              <li><a href="man.html">신발</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="beauty.html">BEAUTY</a>
+            <ul class="depth2">
+              <li><a href="beauty.html">스킨케어</a></li>
+              <li><a href="beauty.html">메이크업</a></li>
+              <li><a href="beauty.html">헤어&바디</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="life.html">LIFE</a>
+            <ul class="depth2">
+              <li><a href="life.html">홈</a></li>
+              <li><a href="life.html">트래블</a></li>
+              <li><a href="life.html">디지털</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;">SALE</a></li>
+          <li><a href="javascript:;">DESIGNER</a></li>
+        </ul>
+
+        <!-- <ul class="depth1">
+            <li><a href="#">PRE-SHOW</a></li>
+            <li><a href="#">ORIGINAL</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BEST</a></li>
+          </ul> -->
+      </nav>
+      <div class="info">
+        <span>
+          <a href="join.html"
+            ><i class="fa-solid fa-user-plus"></i>
+            <p>JOIN</p></a
+          >
+        </span>
+        <span>
+          <a href="#"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <p>LOGIN</p></a
+          >
+        </span>
+        <span>
+          <a href="javascript:;"
+            ><i class="fa-solid fa-user"></i>
+            <p>MY</p></a
+          >
+        </span>
+        <span>
+          <a href="#"
+            ><i class="fa-solid fa-cart-plus"></i>
+            <p>CART</p></a
+          >
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="blank">
+
+  </div>
+</header>
+<script>
+  // 광고 배너
+  let a = $("#advertisement a");
+  a.on("click", function () {
+    $("#advertisement").remove();
+    return false;
+  });
+</script>
