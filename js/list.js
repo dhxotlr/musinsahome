@@ -52,6 +52,22 @@ $("#List .title .subcate li").on("click", function () {
   let text = $(this).text();
   usedata(text);
 });
+$('#join .join-start button').on('click',function(){
+    let flag=true
+    $('#join form input').each(function(){
+      
+      if($(this).val()==""){
+        flag=false;
+      }
+    })
+    if(flag){
+      alert("무신사에 오신것을 환영합니다.")
+    }
+    else{
+      alert("모든값을 입력하세요")
+    }
+
+})
 $('#join form').on('submit',function(e){
   // $('#join form input').forEach(function(){})
   e.preventDefault()
