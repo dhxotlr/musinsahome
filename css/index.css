@@ -24,6 +24,9 @@ button {
 a {
   color: inherit;
 }
+.won::after {
+  content: "원";
+}
 
 /* 광고배너 */
 #blank{ height: 172px;}
@@ -437,7 +440,7 @@ a {
 #List .list ul li {
   border: 1px solid #ddd;
   text-align: left;
-  width: 24%;
+  width: 18%;
   padding: 20px 10px;
   margin: 5px 5px;
   font-weight: bold;
@@ -462,98 +465,229 @@ a {
   content: "원";
 }
 /* detail part */
-
-#Detail {
+#Detail .detail_info {
   display: flex;
-  justify-content: center;
-  padding: 30px 50px;
+  justify-content: space-between;
+  padding: 50px;
 }
-#Detail .photo {
+
+#Detail .detail_info .prd_photo img {
   width: 600px;
   height: 600px;
-  margin: 0 30px;
 }
-#Detail .info {
-  margin: 0 50px;
-}
-#Detail .info .brand {
-  padding-top: 20px;
+
+#Detail .detail_info .prd_info .prd_info_item {
+  padding: 20px 0 10px 0;
   border-top: 3px solid #000;
+}
+#Detail .detail_info .prd_info .prd_info_item .name {
+  padding: 10px 0;
+}
+#Detail .detail_info .prd_info .prd_info_item .brand {
+  width: 600px;
   font-size: 20px;
   font-weight: bold;
 }
-#Detail .info .name {
-  padding: 10px 0;
-}
-#Detail .info .grade {
+#Detail .detail_info .prd_info .prd_info_item .grade {
   color: rgb(255, 230, 0);
-  padding: 10px 0;
+  padding-top: 10px;
 }
-#Detail .info .grade a {
+#Detail .prd_info .prd_info_item a {
   font-size: 12px;
   color: #999;
   text-decoration: underline;
+  padding-left: 10px;
 }
-#Detail .info .price {
-  padding-top: 15px;
+
+#Detail .detail_info .prd_info .prd_info_price {
+  padding: 20px 0;
   border-top: 1px solid #eee;
+}
+#Detail .detail_info .prd_info .prd_info_price .price {
   font-size: 20px;
   font-weight: bold;
 }
-#Detail .info .price::after {
-  content: "원";
-}
-#Detail .info .point {
+
+#Detail .detail_info .prd_info .prd_info_price .point {
   font-size: 12px;
   font-weight: bold;
   color: #999;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
 }
-#Detail .info table {
+
+#Detail .detail_info .prd_info .delivery,
+#Detail .detail_info .prd_info .option {
   padding: 20px 0;
+  border-top: 1px solid #eee;
+  width: 100%;
 }
-#Detail .info table col:nth-child(1) {
+#Detail .detail_info .prd_info table col:nth-child(1) {
   width: 100px;
 }
-#Detail .info table th {
+#Detail .detail_info .prd_info table th {
   text-align: left;
   color: #000;
   font-size: 16px;
 }
-#Detail .info table tr td {
+#Detail .detail_info .prd_info table tr td {
   padding: 5px 0;
 }
 
-#Detail .info .delivery {
-  border-bottom: 1px solid #eee;
-}
-#Detail .info .delivery tr {
+#Detail .detail_info .prd_info .delivery tr {
   font-size: 12px;
   color: #999;
 }
-
-#Detail .info .delivery tr td span {
+#Detail .detail_info .prd_info .delivery tr td span {
   color: blue;
 }
-#Detail .info .option {
-  padding: 15px 0;
+
+#Detail .detail_info .prd_info .option select {
+  width: 350px;
+  height: 30px;
+  border: 1px solid #bbb;
 }
-#Detail .info .btn {
-  padding-top: 30px;
-  text-align: center;
-  border-top: 1px solid #eee;
+#Detail .detail_info .prd_info .option input {
+  display: none;
 }
-#Detail .info .btn a {
+#Detail .detail_info .prd_info .option label {
   display: inline-block;
-  width: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
   line-height: 30px;
-  background: #333;
+  background: #999;
   color: #fff;
-  margin: 0px 5px;
-  padding: 5px;
-  border-radius: 10px;
+  margin-right: 10px;
 }
+#Detail .detail_info .prd_info .option input:checked + label {
+  background: #000;
+}
+
+#Detail .detail_info .prd_info .selection {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#Detail .detail_info .prd_info .selection .sel_info {
+  width: 300px;
+}
+#Detail .detail_info .prd_info .selection .sel_info span {
+  color: #888;
+}
+#Detail .detail_info .prd_info .selection .sel_price {
+  display: flex;
+  align-items: center;
+}
+#Detail .detail_info .prd_info .selection .sel_price .qty_price {
+  width: 100px;
+  text-align: end;
+}
+
+#Detail .detail_info .prd_info .selection .sel_price a {
+  border: 1px solid #ccc;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+#Detail .detail_info .prd_info .selection .qty__form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-left: 50px; */
+  border: 2px solid #eee;
+}
+#Detail .detail_info .prd_info .selection .qty__form button {
+  border: 1px solid #eee;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+}
+#Detail .detail_info .prd_info .selection .qty__form input {
+  border: none;
+  font-weight: bold;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+#Detail .detail_info .prd_info .total_price {
+  border-top: 2px solid #000;
+  padding: 20px 0;
+  text-align: right;
+}
+#Detail .detail_info .prd_info .total_price span {
+  color: #ff4800;
+  /* color: #6d58b3; */
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#Detail .detail_info .prd_info .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+  /* border-top: 2px solid #000; */
+}
+#Detail .detail_info .prd_info .btn p {
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #ddd;
+}
+#Detail .detail_info .prd_info .btn p a {
+  display: inline-block;
+  width: 285px;
+  height: 50px;
+  line-height: 50px;
+}
+#Detail .detail_info .prd_info .btn .buy {
+  background: #000;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgb(73, 73, 73);
+}
+#Detail .detail_info .prd_info .btn .buy:hover {
+  background: #6d58b3;
+}
+#Detail .tab {
+  display: flex;
+}
+#Detail .tab a {
+  display: inline-block;
+  border: 2px solid #999;
+  border-left: none;
+  border-bottom: 3px solid #000;
+  width: 25%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#Detail .tab a:nth-child(1) {
+  border-left: 3px solid #999;
+}
+#Detail .tab a.on {
+  border: 3px solid#000;
+  border-bottom: none;
+}
+#Detail .detail_photo {
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 /* join 회원가입 구역 */
 .fieldset{border:none; }

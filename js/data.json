@@ -7,7 +7,8 @@
       "bcategory": "남성상의",
       "mcategory": "맨투맨",
       "option": { "size": ["M", "L", "XL"], "color": ["mint"] },
-      "image": "man1.jpg"
+      "image": "man1.jpg",
+      "grade": "4"
     },
     {
       "brand": "COVERNAT",
@@ -15,8 +16,9 @@
       "price": 99000,
       "bcategory": "남성상의",
       "mcategory": "셔츠",
-      "option": { "size": ["M", "L", "XL"], "color": ["NAVY"] },
-      "image": "man2.jpg"
+      "option": { "size": ["M", "L", "XL"], "color": ["NAVY", "RED", "PINK"] },
+      "image": "man2.jpg",
+      "grade": "5"
     },
     {
       "brand": "CUSTOMELLOW",
@@ -25,7 +27,8 @@
       "bcategory": "남성상의",
       "mcategory": "셔츠",
       "option": { "color": ["Blue"], "size": ["95", "100", "105", "110"] },
-      "image": "man3.jpg"
+      "image": "man3.jpg",
+      "grade": "3"
     },
     {
       "brand": "RADINEO",
@@ -34,7 +37,8 @@
       "bcategory": "남성상의",
       "mcategory": "반팔",
       "option": { "size": ["S", "M", "L", "XL"], "color": ["Blue"] },
-      "image": "man4.jpg"
+      "image": "man4.jpg",
+      "grade": "4"
     },
     {
       "brand": "CUSTOMELLOW",
@@ -43,7 +47,8 @@
       "bcategory": "남성상의",
       "mcategory": "가디건",
       "option": { "size": ["95", "100", "105", "110"], "color": ["Brown"] },
-      "image": "man5.jpg"
+      "image": "man5.jpg",
+      "grade": "5"
     },
     {
       "brand": "NOIRNINE",
@@ -52,7 +57,8 @@
       "bcategory": "남성상의",
       "mcategory": "가디건",
       "option": { "size": ["S", "M", "L"], "color": ["NAVY", "BLACK"] },
-      "image": "man6.jpg"
+      "image": "man6.jpg",
+      "grade": "4"
     },
     {
       "brand": "CUSTOMELLOW",
@@ -61,7 +67,8 @@
       "bcategory": "남성상의",
       "mcategory": "맨투맨",
       "option": { "size": ["95", "100", "105"], "color": ["Green"] },
-      "image": "man7.jpg"
+      "image": "man7.jpg",
+      "grade": "3"
     },
     {
       "brand": "ARMANI EXCHANGE",
@@ -73,7 +80,28 @@
         "size": ["M(100)", "L(105)", "XL(110)"],
         "color": ["블랙", "화이트"]
       },
-      "image": "man8.jpg"
+      "image": "man8.jpg",
+      "grade": "2"
+    },
+    {
+      "brand": "EMIS",
+      "name": "MINI WAPPEN ZIP HOODIE-MELANGE GRAY",
+      "price": 154000,
+      "bcategory": "남성상의",
+      "mcategory": "후드",
+      "option": { "size": ["M", "L", "XL"], "color": ["MELANGE GRAY"] },
+      "image": "man9.jpg",
+      "grade": "5"
+    },
+    {
+      "brand": "ANDERSSON BELL for MEN",
+      "name": "UNISEX MAHI-MAHI CONVERTIBLE COLLAR SHIRTS atb686u",
+      "price": 179000,
+      "bcategory": "남성상의",
+      "mcategory": "셔츠",
+      "option": { "size": ["M", "L", "XL"], "color": ["one color"] },
+      "image": "man10.jpg",
+      "grade": "4"
     }
   ],
   "woman": [
@@ -83,8 +111,9 @@
       "price": 48000,
       "bcategory": "여성상의",
       "mcategory": "나시",
-      "option": { "size": ["F"] },
-      "image": "woman1.jpg"
+      "option": { "size": ["F"], "color": ["WHITE"] },
+      "image": "woman1.jpg",
+      "grade": "5"
     },
     {
       "brand": "SALADBAGUNI",
@@ -93,7 +122,8 @@
       "bcategory": "여성상의",
       "mcategory": "반팔",
       "option": { "size": ["s", "m", "l"], "color": ["pink"] },
-      "image": "woman2.jpg"
+      "image": "woman2.jpg",
+      "grade": "3"
     },
     {
       "brand": "CC collect",
@@ -102,7 +132,8 @@
       "bcategory": "여성상의",
       "mcategory": "니트",
       "option": { "size": ["44", "55", "66"], "color": ["ivory", "pink"] },
-      "image": "woman3.jpg"
+      "image": "woman3.jpg",
+      "grade": "4"
     },
     {
       "brand": "CC collect",
@@ -110,8 +141,9 @@
       "price": 219000,
       "bcategory": "여성상의",
       "mcategory": "블라우스",
-      "option": { "size": ["Light Blue_55", "Light Blue_66"] },
-      "image": "woman4.jpg"
+      "option": { "size": ["55", "66"], "color": ["White", "Light Blue"] },
+      "image": "woman4.jpg",
+      "grade": "2"
     },
     {
       "brand": "CC collect",
@@ -119,8 +151,12 @@
       "price": 249000,
       "bcategory": "여성상의",
       "mcategory": "블라우스",
-      "option": { "size": ["Black_55", "Black_66"] },
-      "image": "woman5.jpg"
+      "option": {
+        "size": ["55", "66"],
+        "color": ["Black", "White"]
+      },
+      "image": "woman5.jpg",
+      "grade": "4"
     },
     {
       "brand": "Matin Kim",
@@ -129,7 +165,8 @@
       "bcategory": "여성상의",
       "mcategory": "반팔",
       "option": { "size": ["s", "m", "l"], "color": ["White"] },
-      "image": "woman6.jpg"
+      "image": "woman6.jpg",
+      "grade": "3"
     },
     {
       "brand": "EMIS",
@@ -138,7 +175,8 @@
       "bcategory": "여성상의",
       "mcategory": "반팔",
       "option": { "size": ["F"], "color": ["YELLOW", "BURGUNDY"] },
-      "image": "woman7.jpg"
+      "image": "woman7.jpg",
+      "grade": "2"
     },
     {
       "brand": "PAIN OR PLEASURE",
@@ -147,9 +185,31 @@
       "bcategory": "여성상의",
       "mcategory": "나시",
       "option": { "size": ["s", "m"], "color": ["beige"] },
-      "image": "woman8.jpg"
+      "image": "woman8.jpg",
+      "grade": "5"
+    },
+    {
+      "brand": "AMES-WORLDWIDE ",
+      "name": "BASIC LOGO KNIT BLACK",
+      "price": 49000,
+      "bcategory": "여성상의",
+      "mcategory": "반팔",
+      "option": { "size": ["F"], "color": ["Black"] },
+      "image": "woman9.jpg",
+      "grade": "5"
+    },
+    {
+      "brand": "여성 랩 스타일 반팔 셔츠",
+      "name": " GUESS ",
+      "price": 108000,
+      "bcategory": "여성상의",
+      "mcategory": "블라우스",
+      "option": { "size": ["XS", "S"], "color": ["LBL", "WHT"] },
+      "image": "woman10.jpg",
+      "grade": "4"
     }
   ],
+
   "beauty": [
     {
       "brand": "hersteller",
@@ -158,7 +218,7 @@
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
       "option": {
-        "type": [
+        "color": [
           "카밍 데이즈 45ml",
           "디어 마이 링클 15ml",
           "디어 마이 링클 45ml",
@@ -166,7 +226,8 @@
           "리벌스 데이 45ml"
         ]
       },
-      "image": "skin1.jpg"
+      "image": "skin1.jpg",
+      "grade": "5"
     },
     {
       "brand": "numbuzin",
@@ -174,8 +235,9 @@
       "price": 28000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["bodlebodle repair 50ml"] },
-      "image": "skin2.jpg"
+      "option": { "color": ["bodlebodle repair 50ml"] },
+      "image": "skin2.jpg",
+      "grade": "3"
     },
     {
       "brand": "hersteller",
@@ -183,8 +245,9 @@
       "price": 38000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["single type"] },
-      "image": "skin3.jpg"
+      "option": { "color": ["원더 베지 쥬시 트리트먼트 에센스"] },
+      "image": "skin3.jpg",
+      "grade": "4"
     },
     {
       "brand": "hersteller",
@@ -192,8 +255,9 @@
       "price": 56000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["single type"] },
-      "image": "skin4.jpg"
+      "option": { "color": ["리틀 드롭스 리벌스 데이 앰플"] },
+      "image": "skin4.jpg",
+      "grade": "3"
     },
     {
       "brand": "numbuzin",
@@ -201,17 +265,21 @@
       "price": 28000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["single type"] },
-      "image": "skin5.jpg"
+      "option": { "color": ["잡티 이별 세럼"] },
+      "image": "skin5.jpg",
+      "grade": "5"
     },
     {
-      "brand": "hersteller",
-      "name": "리틀 드롭스 디어 마이 링클 15ml",
-      "price": 64000,
+      "brand": "BERGAMO",
+      "name": "청귤 비타 샤인 잡티 스킨케어 2종 세트",
+      "price": 34000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["single type"] },
-      "image": "skin6.jpg"
+      "option": {
+        "color": ["청귤 비타 샤인 잡티 스킨케어 2종 세트 세럼 토너"]
+      },
+      "image": "skin6.jpg",
+      "grade": "4"
     },
     {
       "brand": "hersteller",
@@ -219,8 +287,9 @@
       "price": 40000,
       "bcategory": "스킨케어",
       "mcategory": "폼/젤/워터",
-      "option": { "type": ["single type"] },
-      "image": "skin7.jpg"
+      "option": { "color": ["원더 베지 밸런싱 클렌징 폼 120ml"] },
+      "image": "skin7.jpg",
+      "grade": "2"
     },
     {
       "brand": "hersteller",
@@ -228,8 +297,29 @@
       "price": 56000,
       "bcategory": "스킨케어",
       "mcategory": "에센스/세럼/앰플",
-      "option": { "type": ["single type"] },
-      "image": "skin8.jpg"
+      "option": { "color": ["리틀 드롭스 리벌스 데이 앰플"] },
+      "image": "skin8.jpg",
+      "grade": "3"
+    },
+    {
+      "brand": "Renk",
+      "name": "프레쉬 토너",
+      "price": 14900,
+      "bcategory": "스킨케어",
+      "mcategory": "에센스/세럼/앰플",
+      "option": { "color": ["320ml"] },
+      "image": "skin9.jpg",
+      "grade": "4"
+    },
+    {
+      "brand": "Mamonde",
+      "name": "마몽드 캐모마일퓨어토너 250ML",
+      "price": 12000,
+      "bcategory": "스킨케어",
+      "mcategory": "에센스/세럼/앰플",
+      "option": { "color": ["chamomile pure toner"] },
+      "image": "skin10.jpg",
+      "grade": "5"
     }
   ],
   "life": [
@@ -239,8 +329,9 @@
       "price": 75900,
       "bcategory": "홈",
       "mcategory": "테이블",
-      "option": { "type": ["single type"] },
-      "image": "home01.jpg"
+      "option": { "color": ["single type"] },
+      "image": "home01.jpg",
+      "grade": "2"
     },
     {
       "brand": "SAMICK FURNITURE",
@@ -249,14 +340,15 @@
       "bcategory": "홈",
       "mcategory": "매트리스",
       "option": {
-        "type": [
+        "color": [
           "01.프라임 롤팩(슈퍼싱글)",
-          "01.프라임 롤팩(퀸) (+50,000원)",
-          "02.하이엔드 롤팩(슈퍼싱글) (+60,000원)",
-          "02.하이엔드 롤팩(퀸) (+130,000원)"
+          "01.프라임 롤팩(퀸) (+50000원)",
+          "02.하이엔드 롤팩(슈퍼싱글) (+60000원)",
+          "02.하이엔드 롤팩(퀸) (+130000원)"
         ]
       },
-      "image": "home02.png"
+      "image": "home02.png",
+      "grade": "5"
     },
     {
       "brand": "HouseRecipe",
@@ -264,8 +356,9 @@
       "price": 80000,
       "bcategory": "홈",
       "mcategory": "수납장",
-      "option": { "type": ["single type"] },
-      "image": "home03.png"
+      "option": { "color": ["single type"] },
+      "image": "home03.png",
+      "grade": "2"
     },
     {
       "brand": "HouseRecipe",
@@ -273,8 +366,9 @@
       "price": 10900,
       "bcategory": "홈",
       "mcategory": "의자",
-      "option": { "type": ["화이트", "핑크", "마일드그레이", "모스그레이"] },
-      "image": "home04.jpg"
+      "option": { "color": ["화이트", "핑크", "마일드그레이", "모스그레이"] },
+      "image": "home04.jpg",
+      "grade": "4"
     },
     {
       "brand": "HouseRecipe",
@@ -283,9 +377,18 @@
       "bcategory": " 홈",
       "mcategory": "테이블",
       "option": {
-        "type": ["white", "black", "mint", "grey", "lavender", "peach", "lemon"]
+        "color": [
+          "white",
+          "black",
+          "mint",
+          "grey",
+          "lavender",
+          "peach",
+          "lemon"
+        ]
       },
-      "image": "home05.jpg"
+      "image": "home05.jpg",
+      "grade": "4"
     },
     {
       "brand": "SAMICK FURNITURE",
@@ -294,12 +397,13 @@
       "bcategory": "홈",
       "mcategory": "화장대",
       "option": {
-        "type": [
+        "color": [
           "01.멀티수납 화장대(스툴제외)_내추럴",
-          "02.멀티수납 화장대(스툴포함)_내추럴(+40,000원)"
+          "02.멀티수납 화장대(스툴포함)_내추럴(+40000원)"
         ]
       },
-      "image": "home06.png"
+      "image": "home06.png",
+      "grade": "4"
     },
     {
       "brand": "SAMICK FURNITURE",
@@ -308,17 +412,18 @@
       "bcategory": "홈",
       "mcategory": "행거",
       "option": {
-        "type": [
+        "color": [
           "화이트_01. 800 1단 행거형",
-          "화이트_02.800 2단 행거형(+10,000원)",
-          "화이트_03. 800 3단 서랍형(+63,100원)",
-          "화이트_04. 800 수납 도어형(+63,100원)",
-          "화이트_05. 800 5단 선반장(+20,000원)",
+          "화이트_02.800 2단 행거형(+10000원)",
+          "화이트_03. 800 3단 서랍형(+63100원)",
+          "화이트_04. 800 수납 도어형(+63100원)",
+          "화이트_05. 800 5단 선반장(+20000원)",
           "화이트_06. 코너형(+34,000원)",
-          "화이트_07. 1200 와이드 1단 행거형(+30,000원)"
+          "화이트_07. 1200 와이드 1단 행거형(+30000원)"
         ]
       },
-      "image": "home07.png"
+      "image": "home07.png",
+      "grade": "3"
     },
     {
       "brand": "SAMICK FURNITURE",
@@ -327,18 +432,47 @@
       "bcategory": "홈",
       "mcategory": "소파",
       "option": {
-        "type": [
+        "color": [
           "01.4인용 소파(스툴제외)_아이보리",
           "01.4인용 소파(스툴제외)_네이비",
-          "01.4인용 소파(카우치스툴포함)_아이보리(+150,000원)",
-          "01.4인용 소파(카우치스툴포함)_네이비(+150,000원)",
-          "02.6인용 소파(스툴제외)_아이보리(+170,000원)",
-          "02.6인용 소파(스툴제외)_네이비(+170,000원)",
-          "02.6인용 소파(카우치스툴포함)_아이보리(+311,000원)",
-          "02.6인용 소파(카우치스툴포함)_네이비(+311,000원)"
+          "01.4인용 소파(카우치스툴포함)_아이보리(+150000원)",
+          "01.4인용 소파(카우치스툴포함)_네이비(+150000원)",
+          "02.6인용 소파(스툴제외)_아이보리(+170000원)",
+          "02.6인용 소파(스툴제외)_네이비(+170000원)",
+          "02.6인용 소파(카우치스툴포함)_아이보리(+311000원)",
+          "02.6인용 소파(카우치스툴포함)_네이비(+311000원)"
         ]
       },
-      "image": "home08.jpg"
+      "image": "home08.jpg",
+      "grade": "5"
+    },
+    {
+      "brand": "SATO STORAGE FURNITURE",
+      "name": "파우리 2단 슬라이딩 도어 주방 수납장 진열장 그릇장",
+      "price": 239000,
+      "bcategory": "홈",
+      "mcategory": "수납장",
+      "option": {
+        "color": ["월넛"]
+      },
+      "image": "home09.jpg",
+      "grade": "3"
+    },
+    {
+      "brand": "SAMICK FURNITURE",
+      "name": "삼익가구 어썸 통세라믹 원목 식탁 의자 시리즈",
+      "price": 139000,
+      "bcategory": "홈",
+      "mcategory": "의자",
+      "option": {
+        "color": [
+          "01. 원목의자 1EA_오트밀_내추럴",
+          "02. 2인용 원목 벤치_오트밀+내추럴",
+          "03. 3인용 원목 벤치_오트밀+내추럴(11,000원)"
+        ]
+      },
+      "image": "home10.jpg",
+      "grade": "5"
     }
   ]
 }
