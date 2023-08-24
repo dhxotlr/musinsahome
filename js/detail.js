@@ -115,9 +115,9 @@ if (optionSize === "undefined") {
 }
 
 detail_info += `<div class="sel_price"><div class="qty__form">
-                    <button type="button" class="qty__minus">-</button>
+                    <button type="button" class="qty__minus"><i class="fa-solid fa-square-minus"></i></button>
                     <input type="text" value="0" autocomplete="off" class="qty__input"/>
-                    <button type="button" class="qty__plus">+</button>
+                    <button type="button" class="qty__plus"><i class="fa-solid fa-square-plus"></i></i></button>
                 </div>
                 <p class="qty_price won">
                 0
@@ -287,11 +287,18 @@ $('body').on('submit','.prdInfo',function(e){
           sub_Sizevalue=$(this).val()
         }
       })
-      if(!sub_Sizevalue){
-        alert("사이즈를 선택해 주세요")
-                  return false;
-      }
+    if(!sub_Sizevalue){
+       alert("사이즈를 선택해 주세요")
+       return false;
     }
+      
+    }
+    let input_qty=parseInt($('.qty__input').val())
+    if(!input_qty){
+      alert("수량을 입력해 주세요")
+      return false
+    }
+      
     let newitem ={
       name : pname,
       price : price,
