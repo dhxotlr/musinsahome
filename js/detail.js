@@ -14,7 +14,7 @@ const [
   image,
   grade,
 ] = detail;
-
+console.log(optionSize)
 let pprice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 // 사이즈 분리
@@ -39,7 +39,7 @@ let star = "";
 for (let i = 1; i <= grade; i++) {
   star += `<i class="fa-solid fa-star"></i>`;
 }
-
+console.log(image);
 let pt = image.split(".");
 console.log(pt);
 let ptlink = pt[0];
@@ -53,6 +53,7 @@ console.log(dpt);
 
 // html에 넣을 내용
 let detail_info = `<div class="detail_info">`;
+detail_info +=`<form action="#" method="post" class="prdInfo">`
 detail_info += `<div class="prd_photo">`;
 detail_info += `<img src="../img/json/${image}" alt="${pname}" /></div>`;
 detail_info += `<div class="prd_info">`;
@@ -116,7 +117,7 @@ if (optionSize === "undefined") {
 detail_info += `<div class="sel_price"><div class="qty__form">
                     <button type="button" class="qty__minus">-</button>
                     <input type="text" value="0" autocomplete="off" class="qty__input"/>
-                    <button type="" class="qty__plus">+</button>
+                    <button type="button" class="qty__plus">+</button>
                 </div>
                 <p class="qty_price won">
                 0
@@ -126,16 +127,17 @@ detail_info += `<div class="sel_price"><div class="qty__form">
 detail_info += `<div class="total_price">총 상품 금액 <span class="won span">0</span></div>`;
 detail_info += `<div class="btn">
                     <p class="cart">
-                    <a href="./cart.html">
-                        <i class="fa-solid fa-heart"></i> 장바구니 담기</a>
+                    <button type="submit" class="btn_cart">
+                        <i class="fa-solid fa-heart"></i> 장바구니 담기</button>
                     </p>
                     <p class="buy">
-                    <a href="./buy.html">
+                    <button type="submit" class="btn_buy">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        바로 구매하기</a>
+                        바로 구매하기</button>
                     </p>
                      </div>`;
-detail_info += ` </div></div>`;
+detail_info += ` </div>`;
+detail_info += ` </form></div>`;
 detail_info += ` <div class="tab">
                     <a href="javascript:;" class="on">DETAIL</a>
                     <a href="javascript:;">REVIEW</a>
@@ -144,7 +146,7 @@ detail_info += ` <div class="tab">
                 </div>`;
 detail_info += `<div class="detail_photo">${dpt}</div>`;
 $("#Detail").append(detail_info);
-
+console.log(detail_info)
 // $('detail_photo').
 
 // 선택한 사이즈 값
@@ -178,10 +180,18 @@ $("#Detail").append(detail_info);
 // });
 
 // 선택된 상품 X 누르면 지우기
-let a = $("#Detail .detail_info .prd_info .selection .sel_price a ");
-a.on("click", function () {
+
+// let a = $("#Detail .detail_info .prd_info .selection .sel_price a ");
+
+// a.on("click", function () {
+//   $("#Detail .detail_info .prd_info .selection").remove();
+//   return false;
+// });
+
+
+$('body').on("click","#Detail .detail_info .prd_info .selection .sel_price a", function () {
   $("#Detail .detail_info .prd_info .selection").remove();
-  return false;
+  
 });
 
 // + 누르면
@@ -257,8 +267,59 @@ $('input[name="size"]').on("change", function () {
   let sizeValue = $(this).val();
   $(".selection .size").text(sizeValue);
 });
+$('body').on('submit','.prdInfo',function(e){})
+$('body').on('submit','.prdInfo',function(e){
+    e.preventDefault()
+    let btn_class = $(document.activeElement).attr('class');
 
-//
-// if ($('select[name="color"]').val() && $('input[name="size"]').val()) {
-//   $("#Detail .detail_info .prd_info .selection").addClass("on");
-// }
+    let sub_Colorvalue =$('select[name="color"]').val()
+    if(optionSize !== "undefined"&&!sub_Colorvalue){
+        alert("색상을 선택하세요.")
+        return false;
+    }else if(optionSize === "undefined"&&!sub_Colorvalue){
+      alert("타입을 선택하세요.")
+      return false;
+    }
+    let sub_Sizevalue = "";
+    if (optionSize !== "undefined"){
+      $('input[name="size"]').each(function(){
+        if($(this).prop('checked')){
+          sub_Sizevalue=$(this).val()
+        }
+      })
+      if(!sub_Sizevalue){
+        alert("사이즈를 선택해 주세요")
+                  return false;
+      }
+    }
+    let newitem ={
+      name : pname,
+      price : price,
+      photo : image,
+      size : sub_Sizevalue,
+      color : sub_Colorvalue,
+      quantity : quantity
+      // total : total 필요없음
+
+  }
+  
+
+    let itemList= JSON.parse(localStorage.getItem("allItem"))
+    if(itemList==null){
+        itemList=[]
+    }
+   
+    itemList.push(newitem)
+    localStorage.setItem("allItem",JSON.stringify(itemList))
+  // location.href="http://localhost:5502/cart.html"
+  
+   if(btn_class=="btn_cart"){
+       location.href = "./cart.html"
+    } else{
+       location.href = "./buy.html"
+    }
+    
+    
+    
+    
+})
