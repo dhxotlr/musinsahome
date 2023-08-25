@@ -929,3 +929,113 @@ legend{display: none;}
     background-color:#6d58b3 ;
     color: white;
   }
+
+   /* cart part */
+   .cartBox{padding:150px 0 ;
+    /* width: 800px; */
+     margin: 50px auto;
+     text-align: center;
+  }
+  .cartBox .qty__plus,
+  .qty__minus,
+  .remove{cursor: pointer;}
+
+  .cartBox .cartInfo{
+    text-align: center;
+   
+  }
+  .cartBox .cartInfo h2{
+    font-size: 50px;
+  }
+  .cartBox .cartInfo p{
+    margin:20px 0;
+    font-size: 50px;
+  }
+  .cartBox table{
+    
+    
+    text-align: center;
+    margin: 100px auto;
+    border: 1px solid #000;
+  }
+  .cartBox table 
+  .cartBox table th{
+    border-bottom: 1px solid #000;
+  }
+  .cartBox table colgroup col:nth-child(1){
+    width:200px;
+    padding-right: 20px;
+    border-right: 1px solid #000;
+  }
+  .cartBox table colgroup col:nth-child(2){
+    width:auto;
+  }
+  .cartBox table colgroup col:nth-child(3){
+    width:70px;
+  }
+  .cartBox table colgroup col:nth-child(4){
+    width:100px;
+    
+  }
+  .cartBox table colgroup col:nth-child(5){
+    width:100px;
+  }
+  .cartBox table thead th{padding: 15px 0;}
+  
+  .cartBox table tbody input{
+    
+    display: block;
+    width: 30px;
+    text-align: center;
+    border-radius:5px;
+    margin-right: 3px;
+  }
+  .cartBox table tbody td:nth-child(1) img{
+    vertical-align: middle;
+  }
+
+  .cartBox table tbody .qtybox .btnflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+  }
+  .cartBox table tbody .qtybox .btnzip{
+    display: flex;
+    flex-direction: column;
+  }
+  .cartBox table tbody td .remove{
+    font-size: 20px;
+  }
+  .cartBox .contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cartBox .table2 ul{
+    width:300px;
+   
+
+  }
+
+  .cartBox .table2{
+    background: #9989cc;
+  }
+  .cartBox .table2 li h2{
+    border-bottom: 1px solid #ababab;
+  }
+  .pricelist li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+   
+  }
+  
+  .table2 ul li:nth-child(4) button{
+   width: 100%;
+   height: 150px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    font-size: 30px;
+  }
+  
